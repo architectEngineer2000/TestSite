@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vertical Bootstrap Range Slider</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom style to rotate the slider and adjust its position */
+        .vertical-range {
+            writing-mode: bt-lr; /* Rotate the range slider vertically */
+            width: 300px; /* Adjust height (now width due to rotation) */
+            height: 10px; /* Adjust width (now height due to rotation) */
+            transform: rotate(270deg); /* Rotate the slider */
+            padding: 0;
+            margin: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-5 d-flex justify-content-center">
+    <div class="text-center">
+        <label for="customRange" class="form-label">Vertical Slider</label>
+        <input type="range" class="form-range vertical-range" min="0" max="100" id="customRange">
+    </div>
+</div>
+<div>
+    <input id="ex1" data-slider-id='ex1Slider' type="text" data-slider-min="0" data-slider-max="20" data-slider-step="1" data-slider-value="14"/>
+</div>
+
+
+<!-- Bootstrap JS (optional) -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.com/libraries/bootstrap-slider"></script>
+
+</body>
+</html>
